@@ -1,0 +1,6 @@
+{
+  "banner": "never",
+  "skill_directories": [
+    ".copilot/skills/weather-briefing"
+  ]
+}

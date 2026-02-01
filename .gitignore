@@ -1,0 +1,18 @@
+# Environment files (contain secrets)
+env
+.env
+*.env
+
+# Copilot runtime files (not part of agent/skill demo)
+.copilot/logs/
+.copilot/session-state/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Editor files
+*.swp
+*.swo
+*~
+.vscode/
