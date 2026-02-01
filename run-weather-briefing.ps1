@@ -50,8 +50,9 @@ Write-Host "URL:    $Url" -ForegroundColor Yellow
 Write-Host ""
 
 # GitHub Copilot CLI でエージェントを実行（ワークスペースローカルの設定を使用）
+# モデル: gpt-4.1 を明示的に指定
 try {
-    copilot --config-dir $ConfigDir --agent $AgentName -p $Prompt --allow-all --silent
+    copilot --config-dir $ConfigDir --agent $AgentName --model gpt-4.1 -p $Prompt --allow-all --silent
 }
 catch {
     Write-Error "エラーが発生しました: $_"
